@@ -1,0 +1,19 @@
+html {
+  color-scheme: dark;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-width: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.yoda {
+  width: 350px;
+  aspect-ratio: 16 / 9;
+  outline: 3px solid limegreen;
+}
