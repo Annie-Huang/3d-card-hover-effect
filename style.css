@@ -35,6 +35,20 @@ img {
   rotate: x 35deg;
 }
 
+/* This is for when the card is tilted, put a black color on all the 4 corners of the card */
+.yoda::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  background-image: radial-gradient(circle, transparent 150px, red);
+  opacity: 0;
+  transition: opacity var(--timing);
+}
+.yoda:hover::before {
+  opacity: 1;
+}
+
 /* Better performance to use pseudo class for animating shadow
    This solution will not work because even though we place it behind with z-index: -1, as soon as we rotate it, it will create a new stack context will will move the ::after to the front.
 */
