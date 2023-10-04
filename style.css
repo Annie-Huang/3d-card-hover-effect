@@ -14,6 +14,12 @@ img {
 
 .yoda {
   width: 350px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   outline: 3px solid limegreen;
+
+  position: relative;
+}
+.yoda > * {
+  position: absolute;
+  opacity: 0;
 }
