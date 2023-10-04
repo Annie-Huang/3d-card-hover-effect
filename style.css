@@ -47,14 +47,15 @@ img {
   transform: translateZ(
     -100px
   ); /* ----- Not necessary to have for tiny better shadow effect */
-  background: red;
+  /*background: red;*/
+  background: black;
   filter: blur(1rem);
   transition: rotate var(--timing), translate var(--timing); /* ----- The rotate value is Not necessary to have for tiny better shadow effect */
 
   z-index: 1;
 }
 .yoda:hover::after {
-  rotate: x -35deg; /* ----- Not necessary to have for tiny better shadow effect */
+  rotate: x -30deg; /* ----- Not necessary to have for tiny better shadow effect */
   translate: 0 60px;
 }
 
