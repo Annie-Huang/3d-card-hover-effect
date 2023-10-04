@@ -36,12 +36,20 @@ img {
 .yoda::after {
   content: '';
   position: absolute;
-  inset: -100px;
+
+  /* The box shadow of the card*/
+  inset: 1.5rem;
+  translate: 0 60px;
   background: red;
-  z-index: -1;
+  filter: blur(1rem);
+
+  z-index: 1;
 }
 
 .bg-image {
+  position: absolute;
+  z-index: 10;
+
   /* Switch background image from background-size, background-position in .yoda to object-fit, object-position here. */
   height: 100%;
   object-fit: cover;
