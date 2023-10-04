@@ -6,6 +6,9 @@ body {
   display: grid;
   place-content: center;
   min-width: 100vh;
+
+  /* to give the image the tilted (3d) effect when hover on the card, e.g. camera is a 1000px away from the card */
+  perspective: 1000px;
 }
 
 img {
@@ -20,6 +23,11 @@ img {
   background-size: cover;
   background-position: -150px center;
   position: relative;
+
+  transition: rotate 300ms ease;
+}
+.yoda:hover {
+  rotate: x 35deg;
 }
 .yoda > * {
   position: absolute;
