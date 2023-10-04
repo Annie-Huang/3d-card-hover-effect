@@ -28,6 +28,7 @@ img {
   /*background-position: -150px center;*/
   position: relative;
 
+  transform-style: preserve-3d; /* ----- Not necessary to have for tiny better shadow effect */
   transition: rotate var(--timing) ease;
 }
 .yoda:hover {
@@ -42,14 +43,18 @@ img {
   position: absolute;
 
   /* The box shadow of the card*/
-  inset: 1.5rem;
+  inset: 80% 0.5rem 0.5rem; /* ----- Not necessary to have for tiny better shadow effect */
+  transform: translateZ(
+    -100px
+  ); /* ----- Not necessary to have for tiny better shadow effect */
   background: red;
   filter: blur(1rem);
-  transition: translate var(--timing);
+  transition: rotate var(--timing), translate var(--timing); /* ----- The rotate value is Not necessary to have for tiny better shadow effect */
 
   z-index: 1;
 }
 .yoda:hover::after {
+  rotate: x -35deg; /* ----- Not necessary to have for tiny better shadow effect */
   translate: 0 60px;
 }
 
