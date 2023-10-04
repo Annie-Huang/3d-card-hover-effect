@@ -37,11 +37,19 @@ img {
   content: '';
   position: absolute;
   inset: -100px;
-  /*background: red;*/
+  background: red;
   z-index: -1;
 }
 
-.yoda > * {
+.bg-image {
+  /* Switch background image from background-size, background-position in .yoda to object-fit, object-position here. */
+  height: 100%;
+  object-fit: cover;
+  object-position: -150px center;
+}
+
+.logo,
+.front-image {
   position: absolute;
   opacity: 0;
 }
