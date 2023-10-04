@@ -1,0 +1,20 @@
+{
+  "name": "3d-card-hover-effect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annie-Huang/3d-card-hover-effect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annie-Huang/3d-card-hover-effect/issues"
+  },
+  "homepage": "https://github.com/Annie-Huang/3d-card-hover-effect#readme"
+}
