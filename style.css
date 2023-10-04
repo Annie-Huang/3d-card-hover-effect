@@ -19,9 +19,9 @@ img {
   width: 300px;
   aspect-ratio: 9 / 16;
   /*outline: 3px solid limegreen;*/
-  background-image: url('https://assets.codepen.io/308367/yoda-on-dagobah.jpg');
-  background-size: cover;
-  background-position: -150px center;
+  /*background-image: url('https://assets.codepen.io/308367/yoda-on-dagobah.jpg');*/
+  /*background-size: cover;*/
+  /*background-position: -150px center;*/
   position: relative;
 
   transition: rotate 700ms ease;
@@ -31,13 +31,13 @@ img {
 }
 
 /* Better performance to use pseudo class for animating shadow
-   This solution will not work because even though we place it behind with z-index: -1, as soon as we rotate it, it will create a new stack-context will will move the ::after to the front.
+   This solution will not work because even though we place it behind with z-index: -1, as soon as we rotate it, it will create a new stack context will will move the ::after to the front.
 */
 .yoda::after {
   content: '';
   position: absolute;
   inset: -100px;
-  background: red;
+  /*background: red;*/
   z-index: -1;
 }
 
