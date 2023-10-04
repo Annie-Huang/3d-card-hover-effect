@@ -16,7 +16,9 @@ img {
   width: 350px;
   aspect-ratio: 9 / 16;
   outline: 3px solid limegreen;
-
+  background-image: url('https://assets.codepen.io/308367/yoda-on-dagobah.jpg');
+  background-size: cover;
+  background-position: -150px center;
   position: relative;
 }
 .yoda > * {
