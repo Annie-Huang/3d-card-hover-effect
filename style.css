@@ -92,6 +92,11 @@ img {
 .logo {
   z-index: 1000;
   filter: invert(1);
+
+  /* Push the logo to the bottom center */
+  width: 75%;
+  margin-inline: auto;
+  inset: auto 0 2rem;
 }
 
 .front-image {
