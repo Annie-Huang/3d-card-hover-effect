@@ -1,3 +1,7 @@
+:root {
+  --timing: 700ms;
+}
+
 html {
   color-scheme: dark;
 }
@@ -24,7 +28,7 @@ img {
   /*background-position: -150px center;*/
   position: relative;
 
-  transition: rotate 700ms ease;
+  transition: rotate var(--timing) ease;
 }
 .yoda:hover {
   rotate: x 35deg;
@@ -39,11 +43,14 @@ img {
 
   /* The box shadow of the card*/
   inset: 1.5rem;
-  translate: 0 60px;
   background: red;
   filter: blur(1rem);
+  transition: translate var(--timing);
 
   z-index: 1;
+}
+.yoda:hover::after {
+  translate: 0 60px;
 }
 
 .bg-image {
