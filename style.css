@@ -87,5 +87,13 @@ img {
 .logo,
 .front-image {
   position: absolute;
+}
+
+.logo {
+  z-index: 1000;
+  filter: invert(1);
+}
+
+.front-image {
   opacity: 0;
 }

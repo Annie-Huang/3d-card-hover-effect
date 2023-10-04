@@ -5,3 +5,6 @@ https://codepen.io/kevinpowell/pen/jOXwVVB
 https://github.com/Annie-Huang/3d-card-hover-effect
 
 ----------------------------------------------------------------
+Things that we add:
+When tilted, add the box shadow on the card.
+When titled, make 4 corners of the card darker
