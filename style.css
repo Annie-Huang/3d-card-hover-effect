@@ -102,15 +102,14 @@ img {
   transform: translateY(0) translateZ(20px);
   transition: var(--timing);
 }
-.yoda:hover .logo,
-.yoda:hover .front-image {
+.yoda:hover .logo {
   /* Create the opposite rotation on the card when it's hover and push up the logo a bit */
   transform: translateY(-2rem) translateZ(20px);
   rotate: x calc(var(--rotation) * -1);
 }
 
 .front-image {
-  scale: 1.35;
+  scale: 1.125;
   transform-origin: bottom;
   opacity: 0;
   z-index: 100;
@@ -118,4 +117,6 @@ img {
 }
 .yoda:hover .front-image {
   opacity: 1;
+  transform: translateY(-2rem) translateZ(-10px); /* If the translateZ is not in negative value, the logo will appear behind the front-image, even though the logo has a higher z-index */
+  rotate: x calc(var(--rotation) * -1);
 }
