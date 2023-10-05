@@ -10,7 +10,7 @@ html {
 body {
   display: grid;
   place-content: center;
-  min-width: 100vh;
+  min-height: 100vh;
 
   /* to give the image the tilted (3d) effect when hover on the card, e.g. camera is a 1000px away from the card */
   perspective: 1000px;
@@ -109,6 +109,8 @@ img {
 }
 
 .front-image {
+  scale: 1.35;
+  transform-origin: bottom;
   opacity: 0;
   z-index: 100;
   transition: var(--timing);
