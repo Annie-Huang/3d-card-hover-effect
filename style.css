@@ -110,4 +110,9 @@ img {
 
 .front-image {
   opacity: 0;
+  z-index: 100;
+  transition: var(--timing);
+}
+.yoda:hover .front-image {
+  opacity: 1;
 }
