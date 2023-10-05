@@ -1,5 +1,6 @@
 :root {
-  --timing: 700ms;
+  --timing: 400ms;
+  --rotation: 20deg;
 }
 
 html {
@@ -32,7 +33,7 @@ img {
   transition: rotate var(--timing) ease;
 }
 .yoda:hover {
-  rotate: x 35deg;
+  rotate: x var(--rotation);
 }
 
 /* This is for when the card is tilted, put a black color on all the 4 corners of the card */
@@ -70,7 +71,7 @@ img {
   z-index: 1;
 }
 .yoda:hover::after {
-  rotate: x -30deg; /* ----- Not necessary to have for tiny better shadow effect */
+  rotate: x calc(var(--rotation) * -1); /* ----- Not necessary to have for tiny better shadow effect */
   translate: 0 60px;
 }
 
@@ -104,7 +105,7 @@ img {
 .yoda:hover .logo {
   /* Create the opposite rotation on the card when it's hover and push up the logo a bit */
   transform: translateY(-2rem) translateZ(20px);
-  rotate: x -30deg;
+  rotate: x calc(var(--rotation) * -1);
 }
 
 .front-image {
