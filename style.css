@@ -97,6 +97,14 @@ img {
   width: 75%;
   margin-inline: auto;
   inset: auto 0 2rem;
+
+  transform: translateY(0) translateZ(20px);
+  transition: var(--timing);
+}
+.yoda:hover .logo {
+  /* Create the opposite rotation on the card when it's hover and push up the logo a bit */
+  transform: translateY(-2rem) translateZ(20px);
+  rotate: x -30deg;
 }
 
 .front-image {
