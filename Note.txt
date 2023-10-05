@@ -8,3 +8,5 @@ https://github.com/Annie-Huang/3d-card-hover-effect
 Things that we add:
 When tilted, add the box shadow on the card.
 When titled, make 4 corners of the card darker
+Make front image and logo no tilted on hover
+Make the front image behind the logo, and make it grow when on hover
